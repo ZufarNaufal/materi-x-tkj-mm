@@ -17,7 +17,7 @@
         font-family: 'Open Sans', sans-serif;
         }
       body{
-        background-image: url('https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+        background-image: url('https://images.unsplash.com/photo-1543353071-10c8ba85a904?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
       }
       #loader {
       width: 48px;
@@ -87,28 +87,49 @@
       <div class="card mb-3" style="max-width: 900px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="../access.png" class="img-fluid rounded-start" style="max-width: auto;" alt="">
+            <img src="https://images.unsplash.com/photo-1611280422374-fa3c1110c16e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" class="img-fluid rounded-start"  style="height: 100%; width: 120%;" alt="">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h3>SIGN-IN</h3>
+              <h5>FOOD-CHECKOUT</h5>
               <hr>
               <form>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Rice Bowl" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <span class="input-group-text" id="basic-addon2">Jenis Makanan</span>
+                </div>
+
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon3">Jenis Minuman</span>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                  </div>
+                  <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Masukkan Harga">
+                  <span class="input-group-text">.00</span>
                 </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" placeholder="Server" aria-label="Server">
                 </div>
-                <button type="submit" class="btn btn-outline-primary btn-sm">SIGN - IN</button>
-              </form>  
+
+                <div class="input-group">
+                  <span class="input-group-text">Catatan Order</span>
+                  <textarea class="form-control" aria-label="Kirim Catatan Untuk Pesanan" placeholder="Kirim Catatan Untuk Pesanan"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-primary btn-sm mt-3">CHECK-OUT</button>
+               </form>  
             </div>
           </div>
         </div>
