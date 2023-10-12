@@ -85,29 +85,81 @@
             width: 100%;
             margin-top: 0;
         }
+        #loader{
+            width: 48px;
+            height: 6px;
+            text-align: center;
+            display: block;
+            margin: auto;
+            position: absolute;
+            border-radius: 4px;
+            color: #726666;
+            box-sizing: border-box;
+            animation: animloader 1.6s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+               
+        }
+        @keyframes spin {
+         0% { transform: rotate(06deg); }
+         0% { transform: rotate(360deg); }
+        
+        }
+        .animate-bottom{
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @keyframes animatebottom {
+            from { bottom: 100px; opacity: 0 }
+            to { bottom: 0px; opacity: 1}
+            
+        }
+        @keyframes animloader {
+            0%{ box-shadow: -10px 20px, 10px 35px, 0px 50px }
+            25%{ box-shadow: 0px 20px, 0px 35px, 10px 50px }
+            50%{ box-shadow: 0px 20px, 0px 35px, -10px 50px }
+            75%{ box-shadow: -10px 20px, 10px 35px, 0px 50px }
+            100%{ box-shadow: -10px 20px, 10px 35px, 0px 50px }
+               
+        }
+        #myDiv{
+            display: none;
+            text-align: center;
+        }
 }
     </style>
 </head>
-<body>
-    <div class="container" data-aos="fade-down" data-aos-duration="1800">
-        <h3 style="position: relative; padding: 20px; text-align: center;">
-            <i class="bi bi-box-arrow-in-right"></i>
+<body onload="myFunction()">
+    <div class="container">
+        <div class="row align-items-center py-3 position-absolute top-50 start-50 translate-middle"></div>
+        <div id="loader"></div>
+    </div>
+    <div style="display:none;" id="myDiv" class="animate-bottom row align-items-center py-3 position-absolute top-50 start-50 translate-middle">
+    </div>
+        <div class="container" data-aos="fade-down" data-aos-duration="1800">
+        <h3 class="mb-3" style="position: relative; padding: 20px; text-align: center;">
+            <i class="bi bi-box-arrow-in-right mb-3"></i>
             PAGE -LOGIN </h3>
     <form action="/">
-        <div class="row">
-                <label for="username">USERNAME</label>
-                <input type="text" class="rounded-5" id="username" name="username" placeholder="Phone Number, email, username">
-        </div>
-        <br>
-        <div class="row">
-                <label for="fname">PASSWORD / KATA SANDI</label>
-                <input type="password" class="rounded-5" id="password" name="password" placeholder="Your Password">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control rounded-5" id="floatingInput" placeholder="Enter Username">
+            <label for="floatingInput"><i class="bi bi-person-vcard"></i> Username</label>
+          </div>        
+          <br>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-5" id="floatingInput" placeholder="Enter Username">
+            <label for="floatingInput"><i class="bi bi-key"></i> Password</label>
             <br>
             <div class="row">                
                 <input type="submit" value="Submit">
-                <a href="../FORMS & VALIDATION/SIGN-UP.html">DAFTAR AKUN</a>
-                <a href="../FORMS & VALIDATION/FORM-VALID.html">form 1</a>
-                <a href="../FORMS & VALIDATION/buatakun-page.html">test page</a>
+                <a href="#" class="btn btn-primary rounded-5" tabindex="-1" role="button" aria-disabled="true">Tidak Punya Akun ? Daftar</a>
             </div>
         </div>
     </form>
