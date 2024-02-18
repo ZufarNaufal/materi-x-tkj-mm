@@ -9,8 +9,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+      #loader{
+        width: 48px;
+    height: 6px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: absolute;
+    border-radius: 4px;
+    color: #726666;
+    box-sizing: border-box;
+    animation: animloader 0.6s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animloader { 
+      0% { box-shadow: -10px 20px, 10px 35px , 0px 50px }
+    25% { box-shadow: 0px 20px ,  0px 35px, 10px 50px }
+    50% { box-shadow: 10px 20px, -10px 35px, 0px 50px }
+    75% { box-shadow: 0px 20px, 0px  35px, -10px 50px }
+    100% { box-shadow: -10px 20px, 10px  35px, 0px 50px}
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+    </style>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
+  <div class="container">
+    <div class="row align-items-center py-3 position-absolute top-50 start-50 translate-middle">
+
+            <div id="loader"></div>
+            
+    </div>
+</div>
+<div style="display:none;" id="myDiv" class="animate-bottom row align-items-center py-3 position-absolute top-50 start-50 translate-middle">
+
+</div>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -136,6 +197,17 @@
         <section class="bottom">2023 Hologram</section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+<script>
+        var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage, 1000);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+</script>
 </body>
 </html>
