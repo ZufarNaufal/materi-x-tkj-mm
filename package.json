@@ -2,7 +2,7 @@
   "name": "web-pro",
   "version": "1.0.0",
   "description": "LOADER & MODAL [ BOOTSTRAP 5]",
-  "main": "",
+  "main": "example.html",
   "scripts": {
     "start": "serve",
     "build": "echo This is a static template, there is no bundler or bundling involved!"
