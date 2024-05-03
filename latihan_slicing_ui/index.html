@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
 
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -41,21 +43,30 @@
                         <a class="nav-link" href="#">Official Store</a>
                     </li>
                     
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="bi bi-cart3 fs-4"></i>
-                        </a>
-                    </li>
                 </ul>
                 <div class="d-flex">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Sign - In / Sign - Up
-                      </button>
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My E-Wallet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Official Store</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-box-arrow-in-right"></i>
+                          </button>
+                        
+                    </ul>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header text-center">
-                              <h1 class="modal-title" id="exampleModalLabel">Sign - In / Sign - Up </h1>
+                              <h1 class="modal-title" id="exampleModalLabel">
+                                <i class="bi bi-controller fs-1"></i>
+                              </h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -100,7 +111,7 @@
                                 Your <span class="text-purple">#1 <br> Choosen</span> TOP-UP Games
                             </h1>
                             <p class="support">
-                                Our bootcamp is helping junior developers who <br> are really passionate in the programming.
+                                Officialy Trusted  Platform <br> By BUMN (Badan Usaha Milik Negara)    
                             </p>
                             <p class="cta">
                                 <a href="#" class="btn btn-master btn-primary">
@@ -112,13 +123,16 @@
                               <div class="swiper mySwiper">
                                         <div class="swiper-wrapper">
                                           <div class="swiper-slide">
-                                            <img src="https://www.pubgmobile.com/images/event/royalepass/kv_rpA6.jpg" alt="" class="">
+                                            <img src="https://wstatic-prod-boc.krafton.com/PUBG_OFFICIAL/20240423/G0zleZz0.png" alt="" class="">
                                           </div>
                                           <div class="swiper-slide">
-                                            <img src="https://www.pubgmobile.com/images/event/royalepass/kv_rpA6.jpg" alt="" class="">
+                                            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9a4bfdb90a79a06b/66186fec569f275fe1aee70e/[For_Website]_EP8_Act_2_Article_1920x1080_Omen.jpg?auto=webp&disable=upscale&height=1055" alt="" class="">
                                           </div>
                                           <div class="swiper-slide">
-                                            <img src="https://www.pubgmobile.com/images/event/royalepass/kv_rpA6.jpg" alt="" class="">
+                                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg" alt="" class="">
+                                          </div>
+                                          <div class="swiper-slide">
+                                            <img src="https://fox2now.com/wp-content/uploads/sites/14/2021/04/NexstarThumbnail_041421_ApexLegends_1680x945.jpg?strip=1" alt="" class="">
                                           </div>
                                         </div>
                                         <div class="swiper-button-next"></div>
@@ -148,19 +162,17 @@
         <div class="container" data-aos="fade-up">
   
           <div class="section-header">
-            <h2>Highlight Games</h2>
-            <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
+            <h2 class="text-center">Highlight Games</h2>
           </div>
   
           <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
   
             <div>
-              <ul class="portfolio-flters">
+              <ul class="portfolio-flters mt-5">
                 <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-product">Product</li>
-                <li data-filter=".filter-branding">Branding</li>
-                <li data-filter=".filter-books">Books</li>
+                <li data-filter=".filter-app">PC Games</li>
+                <li data-filter=".filter-product">Console Games</li>
+                <li data-filter=".filter-branding">Mobile Games</li>
               </ul><!-- End Portfolio Filters -->
             </div>
   
@@ -168,7 +180,7 @@
   
               <div class="col-xl-4 col-md-6 portfolio-item filter-app">
                 <div class="portfolio-wrap">
-                  <a href="#" data-gallery="portfolio-gallery-app" class="glightbox"><img src="https://staticg.sportskeeda.com/editor/2024/01/902fd-17047096793819-1920.jpg?w=640" class="img-fluid" alt=""></a>
+                  <a href="https://staticg.sportskeeda.com/editor/2024/01/902fd-17047096793819-1920.jpg?w=640" data-gallery="portfolio-gallery-app" class="glightbox"><img src="https://staticg.sportskeeda.com/editor/2024/01/902fd-17047096793819-1920.jpg?w=640" class="img-fluid" alt=""></a>
                   <div class="portfolio-info">
                     <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -178,7 +190,7 @@
   
               <div class="col-xl-4 col-md-6 portfolio-item filter-product">
                 <div class="portfolio-wrap">
-                  <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg" class="img-fluid" alt=""></a>
+                  <a href="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg" class="img-fluid" alt=""></a>
                   <div class="portfolio-info">
                     <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -188,7 +200,7 @@
   
               <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
                 <div class="portfolio-wrap">
-                  <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt=""></a>
+                  <a href="https://fox2now.com/wp-content/uploads/sites/14/2021/04/NexstarThumbnail_041421_ApexLegends_1680x945.jpg?strip=1" data-gallery="portfolio-gallery-app" class="glightbox"><img src="https://fox2now.com/wp-content/uploads/sites/14/2021/04/NexstarThumbnail_041421_ApexLegends_1680x945.jpg?strip=1" class="img-fluid" alt=""></a>
                   <div class="portfolio-info">
                     <h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -198,7 +210,7 @@
   
               <div class="col-xl-4 col-md-6 portfolio-item filter-books">
                 <div class="portfolio-wrap">
-                  <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt=""></a>
+                  <a href="https://dailyspin.id/wp-content/uploads/2021/11/PlayStation-Store.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="https://dailyspin.id/wp-content/uploads/2021/11/PlayStation-Store.jpg" class="img-fluid" alt=""></a>
                   <div class="portfolio-info">
                     <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -208,7 +220,7 @@
   
               <div class="col-xl-4 col-md-6 portfolio-item filter-app">
                 <div class="portfolio-wrap">
-                  <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt=""></a>
+                  <a href="https://www.blibli.com/friends-backend/wp-content/uploads/2024/03/B111513-Cover-Rekomendasi-Game-Steam-Terbaru.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="https://www.blibli.com/friends-backend/wp-content/uploads/2024/03/B111513-Cover-Rekomendasi-Game-Steam-Terbaru.jpg" class="img-fluid" alt=""></a>
                   <div class="portfolio-info">
                     <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -218,7 +230,7 @@
   
               <div class="col-xl-4 col-md-6 portfolio-item filter-product">
                 <div class="portfolio-wrap">
-                  <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt=""></a>
+                  <a href="https://www.nme.com/wp-content/uploads/2020/08/Xbox-Store-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="https://www.nme.com/wp-content/uploads/2020/08/Xbox-Store-1.jpg" class="img-fluid" alt=""></a>
                   <div class="portfolio-info">
                     <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -546,7 +558,7 @@
                                             Fanny
                                         </h4>
                                         <p class="role">
-                                            Developer at Google
+                                            Tester
                                         </p>
                                     </div>
                                 </div>
@@ -562,10 +574,10 @@
                                     <img src="/assets/images/angga.png" class="photo" alt="">
                                     <div class="info">
                                         <h4 class="name">
-                                            Angga
+                                            Foo
                                         </h4>
                                         <p class="role">
-                                            CEO at BWA Corp
+                                            Tester
                                         </p>
                                     </div>
                                 </div>
@@ -581,10 +593,10 @@
                                     <img src="/assets/images/beatrice.png" class="photo" alt="">
                                     <div class="info">
                                         <h4 class="name">
-                                            Beatrice
+                                            Kylo
                                         </h4>
                                         <p class="role">
-                                            QA at Facebook
+                                            Tester
                                         </p>
                                     </div>
                                 </div>
@@ -605,6 +617,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="../latihan_slicing_ui/js/main.js"></script>
     <script>
         AOS.init();

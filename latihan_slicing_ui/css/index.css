@@ -364,6 +364,7 @@ body {
   -webkit-box-shadow: 1px 8px 61px 0px rgba(22, 28, 51, 0.08);
   -moz-box-shadow: 1px 8px 61px 0px rgba(22, 28, 51, 0.08);
   padding: 24px 0 24px 0;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 .navbar .user-logged a {
