@@ -147,9 +147,9 @@ document.addEventListener("DOMContentLoaded", () => {
   new PureCounter();
 
   /**
-   * Clients Slider
+   * payment Slider
    */
-  new Swiper(".clients-slider", {
+  new Swiper(".payment-slider", {
     speed: 400,
     loop: true,
     autoplay: {
