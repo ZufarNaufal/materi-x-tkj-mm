@@ -185,7 +185,7 @@ body {
 }
 
 .steps .item-step .cover {
-  height: 497px;
+  height: 300px;
 }
 
 .steps .item-step .copywriting {
@@ -948,4 +948,39 @@ section.top ul {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
+}
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.6s ease-out;
+}
+#preloader:before,
+#preloader:after {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #181515;
+  border-color: #1becc5 #7d20df transparent transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0%,
+  25% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, 50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(180deg);
+  }
 }
