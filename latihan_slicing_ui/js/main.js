@@ -142,11 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
-
-  /**
    * payment Slider
    */
   new Swiper(".payment-slider", {
