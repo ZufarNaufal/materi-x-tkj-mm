@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TITLE (JUDUL APPS PADA TAB)-->
-    <title>latihan_slicing_ui</title>
+    <title> xGRID - Store </title>
 
 
     <!-- EXTEND CSS PACKAGE -->
-    <link rel="stylesheet" href="./latihan_slicing_ui/css/index.css">
+    <link rel="stylesheet" href="./mini_project_example/css/index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -51,8 +51,8 @@
                           </button>
                         
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
+                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                          <div class="modal-content justify-content-center">
                             <div class="modal-header text-center">
                               <h1 class="modal-title" id="exampleModalLabel">
                                 <i class="bi bi-controller fs-1"></i>
@@ -61,7 +61,7 @@
                             </div>
                             <div class="modal-body">
                                 <form>
-                                    <div class="mb-3">
+                                    <div class="mb-3 justify-content-center">
                                       <label for="exampleInputEmail1" class="form-label">Email address</label>
                                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -73,15 +73,15 @@
                                     <div class="mb-3 form-check">
                                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                       <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                      <label for="" class="">Don't Have Account ? <a href="../latihan_slicing_ui/Sign-Up.html" class=""> Register </a></label>
+                                      <label for="" class="">Don't Have Account ? <a href="../mini_project_example/Sign-Up.html" class=""> Register </a></label>
                                     </div>
                                   </form>
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer row">
                               <button class="btn btn-primary" type="submit">Sign - in</button>
-                              <button class="btn btn-outline-success" type="submit">Google</button>
-                              <button class="btn btn-outline-info" type="submit">Twitter</button>
-                              <button class="btn btn-outline-info" type="submit">Facebook</button>
+                              <button class="btn btn-outline-success col-sm-6 col-6 align-items-center" type="submit"><i class="bi bi-google"></i></button>
+                              <button class="btn btn-outline-info col-sm-6 col-6 mx-auto align-items-center" type="submit"><i class="bi bi-twitter"></i></button>
+                              <button class="btn btn-outline-info col-sm-6 col-6 ml-5 align-items-center" type="submit"><i class="bi bi-facebook"></i></button>
                             </div>
                           </div>
                         </div>
@@ -302,9 +302,9 @@
 
     <section class="steps">
         <div class="container">
-            <div class="row item-step pb-70 mt-5">
+            <div class="row item-step pb-70 mt-5"  data-aos="fade-right">
                 <div class="col-lg-6 col-12 text-center">
-                    <img src="../latihan_slicing_ui/assets/img/3754170.jpg" class="cover" alt="">
+                    <img src="../mini_project_example/assets/img/3754170.jpg" class="cover" alt="">
                 </div>
                 <div class="col-lg-6 col-12 text-left copywriting">
                     <p class="story">
@@ -323,7 +323,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row item-step pb-70 pl-150">
+            <div class="row item-step pb-70 pl-150" data-aos="fade-left">
                 <div class="col-lg-6 col-12 text-left copywriting pl-150">
                     <p class="story">
                         STUDY HARDER
@@ -341,13 +341,13 @@
                     </p>
                 </div>
                 <div class="col-lg-6 col-12 text-center mt-5">
-                    <img src="../latihan_slicing_ui/assets/img/streamer.jpg" class="cover" alt="">
+                    <img src="../mini_project_example/assets/img/streamer.jpg" class="cover" alt="">
                 </div>
 
             </div>
-            <div class="row item-step">
+            <div class="row item-step" data-aos="fade-right">
                 <div class="col-lg-6 col-12 text-center mt-5">
-                    <img src="../latihan_slicing_ui/assets/img/streamer.jpg" class="cover" alt="">
+                    <img src="../mini_project_example/assets/img/streamer.jpg" class="cover" alt="">
                 </div>
                 <div class="col-lg-6 col-12 text-left copywriting">
                     <p class="story">
@@ -388,7 +388,7 @@
                         </a>
                     </p>
                 </div>
-                <div class="col-lg-7 col-12">
+                <div class="col-lg-7 col-12" data-aos="fade-up" data-aos-duration="1000">
                     <div class="row">
                         <div class="col-lg-6 col-12">
                             <div class="table-pricing paket-gila">
@@ -468,7 +468,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-12">
+                        <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-duration="2000">
                             <div class="table-pricing paket-biasa">
                                 <p class="story text-center">
                                     STEAM - WALLET
@@ -618,7 +618,7 @@
 
                 <div class="col-xl-3 col-md-6 d-flex shadow-lg" data-aos="fade-up" data-aos-delay="100">
                   <div class="member">
-                    <img src="../latihan_slicing_ui/assets/img/male.png" class="img-fluid" alt="">
+                    <img src="../mini_project_example/assets/img/male.png" class="img-fluid" alt="">
                     <h4>Walter White</h4>
                     <span>Web Development</span>
                     <div class="social">
@@ -632,7 +632,7 @@
       
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
                   <div class="member">
-                    <img src="../latihan_slicing_ui/assets/img/female.png" class="img-fluid" alt="">
+                    <img src="../mini_project_example/assets/img/female.png" class="img-fluid" alt="">
                     <h4>User - 1 </h4>
                     <span>Fullstack - Web</span>
                     <div class="social">
@@ -646,7 +646,7 @@
       
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
                   <div class="member">
-                    <img src="../latihan_slicing_ui/assets/img/male.png" class="img-fluid" alt="">
+                    <img src="../mini_project_example/assets/img/male.png" class="img-fluid" alt="">
                     <h4>User- 2</h4>
                     <span>Fullstack-Mobile</span>
                     <div class="social">
@@ -660,7 +660,7 @@
       
                 <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
                   <div class="member">
-                    <img src="../latihan_slicing_ui/assets/img/female.png" class="img-fluid" alt="">
+                    <img src="../mini_project_example/assets/img/female.png" class="img-fluid" alt="">
                     <h4>User - 3 </h4>
                     <span>Data Enthusiast</span>
                     <div class="social">
@@ -739,7 +739,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <script src="../latihan_slicing_ui/js/main.js"></script>
+    <script src="../mini_project_example/js/main.js"></script>
     <script>
         AOS.init();
     </script>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign - Up Example</title>
+    <link rel="stylesheet" href="../mini_project_example/css/sign-up.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <div class="box">
+    <div class="wave -one"></div>
+    <div class="wave -two"></div>
+   </div>
+   <div class="login-wrapper">
+    
+        <div class="my-form__wrapper">
+            <div class="login-welcome-row">
+                <h1>Welcome back &#x1F44F;</h1>
+                <p>Please enter your details!</p>
+            </div>
+            <form class="my-form">
+                <div class="socials-row">
+                    <a
+                        href="#"
+                        title="Use Google"
+                    >
+                        <img src="../mini_project_example/assets/img/google.png" alt="Google">
+                        Log in with Google
+                    </a>
+                    <a
+                        href="#"
+                        title="Use Apple"
+                    >
+                        <img src="../mini_project_example/assets/img/apple.png" alt="Apple">
+                        Log in with Apple
+                    </a>
+                </div>
+                <div class="divider">
+                    <div class="divider-line"></div>
+                    Or
+                    <div class="divider-line"></div>
+                </div>
+                <div class="text-field">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                    >
+                    <img
+                        alt="Email Icon"
+                        title="Email Icon"
+                        src="../mini_project_example/assets/img/email.svg"
+                    >
+                </div>
+                <div class="text-field">
+                    <label for="password">Password:</label>
+                    <input
+                        id="password"
+                        type="password"
+                        name="password"
+                        placeholder="Your Password"
+                        title="Minimum 6 characters at 
+                            least 1 Alphabet and 1 Number"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                        required
+                    >
+                    <img
+                        alt="Password Icon"
+                        title="Password Icon"
+                        src="../mini_project_example/assets/img/password.svg"
+                    >
+                </div>
+                <input type="submit" class="my-form__button" value="Login">
+                <div class="my-form__actions">
+                    <div class="my-form__row">
+                        <span>Did you forget your password?</span>
+                        <a href="#" title="Reset Password">
+                            Reset Password
+                        </a>
+                    </div>
+                    <div class="my-form__signup">
+                        <a href="#" title="Create Account">
+                            Create Account
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../mini_project_example/js/Sign-Up.js"></script>
+</body>
+</html>
